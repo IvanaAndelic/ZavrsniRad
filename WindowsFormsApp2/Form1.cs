@@ -39,5 +39,31 @@ namespace WindowsFormsApp2
             graphicsObj.DrawLine(MojaOlovka, vrh_y + x_koordinata, y_koordinata, x_koordinata + vrh_y, y_koordinata + visina_plohe);
 
         }
+
+        private void NacrtajButton_Click(object sender, EventArgs e)
+        {
+            double IntervalOd;
+            IntervalOd = Convert.ToDouble(IntervalOdTxt.Text);
+            double IntervalDo;
+            IntervalDo = Convert.ToDouble(IntervalDoTxt.Text);
+            int BrojTocaka;
+            BrojTocaka =Convert.ToInt32( BrojTocakaTxt.Text);
+            double Korak;
+            Korak = (IntervalDo - IntervalOd) / BrojTocaka;
+
+            //pozvati interpreter
+
+
+            Point[] PoljeTocaka;
+
+            for(double i=IntervalOd; i <= IntervalDo; i += Korak)
+            {
+                //punimo polje tocaka prema zadanoj funkciji
+            }
+
+            //Uvesti Graphics Object i Pen
+            //metoda DrawLines kojoj cemo predat polje tocaka
+                
+        }
     }
 }
