@@ -8,9 +8,9 @@ namespace WindowsFormsApp2
 {
     class Context
     {
-        private string _input;
+        private string _input; //"5"
 
-        private int _output;
+        private int _output;  // 5
 
 
 
