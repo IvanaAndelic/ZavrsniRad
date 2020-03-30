@@ -31,7 +31,8 @@ namespace WindowsFormsApp2
 
             //parser expressiona
             //5+2
-            String zbroj = "55+24+13";  //"55+22+13"   "c"
+            String zbroj = "55+24+13";  //"55+22+13"   "cos"
+
 
             String[] splittedZbroj = zbroj.Split('+');  //[0]="55" [1] = "24"
 
