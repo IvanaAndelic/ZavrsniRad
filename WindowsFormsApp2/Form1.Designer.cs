@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp2
+﻿namespace ZavrsniRad
 {
     partial class Form1
     {
@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.FunkcijaTxt = new System.Windows.Forms.TextBox();
@@ -38,19 +36,8 @@
             this.NacrtajButton = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.BrojTocakaTxt = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.grid1 = new DiagramGrid.Controls.Grid();
             this.SuspendLayout();
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.BackgroundImage")));
-            this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox.InitialImage")));
-            this.pictureBox.Location = new System.Drawing.Point(84, 105);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(555, 333);
-            this.pictureBox.TabIndex = 0;
-            this.pictureBox.TabStop = false;
             // 
             // label1
             // 
@@ -117,11 +104,25 @@
             this.BrojTocakaTxt.Size = new System.Drawing.Size(52, 20);
             this.BrojTocakaTxt.TabIndex = 8;
             // 
+            // grid1
+            // 
+            this.grid1.Location = new System.Drawing.Point(98, 78);
+            this.grid1.MajorTicColor = System.Drawing.Color.LightSlateGray;
+            this.grid1.MajorXTicsCount = 6;
+            this.grid1.MajorYTicsCount = 2;
+            this.grid1.MinDelta = 10;
+            this.grid1.MinorTicColor = System.Drawing.Color.LightGray;
+            this.grid1.Name = "grid1";
+            this.grid1.Size = new System.Drawing.Size(562, 240);
+            this.grid1.TabIndex = 9;
+            this.grid1.Text = "grid1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.grid1);
             this.Controls.Add(this.BrojTocakaTxt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.NacrtajButton);
@@ -130,20 +131,16 @@
             this.Controls.Add(this.FunkcijaTxt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox FunkcijaTxt;
@@ -152,6 +149,7 @@
         private System.Windows.Forms.Button NacrtajButton;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox BrojTocakaTxt;
+        private DiagramGrid.Controls.Grid grid1;
     }
 }
 
